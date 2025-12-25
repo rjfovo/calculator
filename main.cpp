@@ -57,6 +57,7 @@ int main(int argc, char *argv[])
     }
 
     engine.addImportPath(QStringLiteral("qrc:/"));
+    engine.addImportPath(QStringLiteral("/usr/share/qml"));
     engine.load(QUrl(QStringLiteral("qrc:/qml/main.qml")));
 
     return app.exec();
